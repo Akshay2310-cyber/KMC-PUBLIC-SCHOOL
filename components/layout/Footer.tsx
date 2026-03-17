@@ -131,15 +131,15 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} KMC Public School. All Rights Reserved.
             </p>
             <div className="flex gap-3 sm:gap-4 md:gap-6 flex-wrap justify-center">
-              <Link href="#" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
-                Privacy
+              <Link href="/privacy" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
+                Privacy Policy
               </Link>
-              <Link href="#" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
-                Terms
+              <Link href="/terms" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
+                Terms of Service
               </Link>
-              <Link href="#" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
+              <a href="/sitemap.xml" className="text-white/80 text-[10px] sm:text-xs md:text-sm hover:text-secondary transition-colors duration-300">
                 Sitemap
-              </Link>
+              </a>
             </div>
           </div>
         </div>
