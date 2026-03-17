@@ -9,14 +9,14 @@ import {
 import { stats } from '@/lib/constants'
 
 const iconMap: Record<string, React.ReactNode> = {
-  'calendar': <Calendar className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'users': <Users className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'graduation-cap': <GraduationCap className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'trophy': <Trophy className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'flask': <FlaskConical className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'running': <Dumbbell className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'bus': <Bus className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
-  'certificate': <Award className="w-3 h-3 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'calendar': <Calendar className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'users': <Users className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'graduation-cap': <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'trophy': <Trophy className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'flask': <FlaskConical className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'running': <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'bus': <Bus className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
+  'certificate': <Award className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7" />,
 }
 
 function CountUp({ target, suffix = '' }: { target: number; suffix?: string }) {
@@ -55,7 +55,7 @@ function CountUp({ target, suffix = '' }: { target: number; suffix?: string }) {
   }, [target, hasAnimated])
 
   return (
-    <div ref={ref} className="text-sm sm:text-xl md:text-4xl lg:text-5xl font-heading font-bold text-primary leading-none mb-1 sm:mb-2 md:mb-3">
+    <div ref={ref} className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-heading font-bold text-primary leading-none mb-1 sm:mb-2 md:mb-3">
       {count}{suffix}
     </div>
   )
@@ -80,7 +80,7 @@ export default function Stats() {
           <h2 className="section-title text-xl sm:text-2xl md:text-4xl">KMC at a Glance</h2>
         </div>
 
-        <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {stats.map((stat, index) => {
             const numericValue = parseInt(stat.number.replace(/\D/g, '')) || 100
             const suffix = stat.number.includes('+') ? '+' : stat.number.includes('%') ? '%' : ''
@@ -92,13 +92,13 @@ export default function Stats() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white p-2 sm:p-4 md:p-8 rounded-lg sm:rounded-xl md:rounded-2xl shadow-sm sm:shadow-md md:shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-center"
+                className="bg-white p-3 sm:p-4 md:p-8 rounded-xl sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-md md:shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-center"
               >
-                <div className="w-6 h-6 sm:w-10 sm:h-10 md:w-16 md:h-16 mx-auto mb-1 sm:mb-3 md:mb-5 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-white">
+                <div className="w-10 h-10 sm:w-10 sm:h-10 md:w-16 md:h-16 mx-auto mb-2 sm:mb-3 md:mb-5 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-white">
                   {iconMap[stat.icon]}
                 </div>
                 <CountUp target={numericValue} suffix={suffix} />
-                <div className="text-gray-600 text-[8px] sm:text-[10px] md:text-sm font-medium leading-tight">{stat.label}</div>
+                <div className="text-gray-600 text-xs sm:text-[10px] md:text-sm font-medium leading-tight">{stat.label}</div>
               </motion.div>
             )
           })}

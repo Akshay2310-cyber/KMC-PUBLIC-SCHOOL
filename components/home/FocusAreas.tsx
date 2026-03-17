@@ -15,7 +15,7 @@ export default function FocusAreas() {
           <h2 className="section-title section-title-light text-xl sm:text-2xl md:text-4xl">3 Strategic Focus Areas</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4 md:gap-8">
           {focusAreas.map((area, index) => (
             <motion.div
               key={area.title}
@@ -23,9 +23,9 @@ export default function FocusAreas() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-md sm:shadow-lg md:shadow-xl hover:-translate-y-2 transition-transform duration-300"
+              className="bg-white rounded-xl sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-lg md:shadow-xl hover:-translate-y-2 transition-transform duration-300 flex sm:flex-col flex-row"
             >
-              <div className="h-20 sm:h-32 md:h-56 overflow-hidden">
+              <div className="h-28 sm:h-32 md:h-56 w-28 sm:w-full flex-shrink-0 overflow-hidden">
                 <Image
                   src={area.image}
                   alt={area.title}
@@ -34,18 +34,18 @@ export default function FocusAreas() {
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="p-2 sm:p-4 md:p-8">
-                <h3 className="text-[10px] sm:text-sm md:text-xl font-heading font-bold text-primary mb-1 sm:mb-2 md:mb-4 line-clamp-2">
+              <div className="p-3 sm:p-4 md:p-8 flex flex-col justify-center">
+                <h3 className="text-sm sm:text-sm md:text-xl font-heading font-bold text-primary mb-1 sm:mb-2 md:mb-4">
                   {area.title}
                 </h3>
-                <p className="text-gray-600 text-[8px] sm:text-xs md:text-sm leading-relaxed mb-2 sm:mb-4 md:mb-6 line-clamp-2 sm:line-clamp-3 md:line-clamp-none">
+                <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed mb-2 sm:mb-4 md:mb-6 line-clamp-2 sm:line-clamp-3 md:line-clamp-none">
                   {area.description}
                 </p>
                 <Link 
                   href="/about" 
-                  className="hidden sm:inline-flex items-center gap-1 sm:gap-2 text-primary font-semibold text-[10px] sm:text-xs md:text-sm uppercase tracking-wide hover:gap-4 transition-all"
+                  className="inline-flex items-center gap-1 sm:gap-2 text-primary font-semibold text-xs sm:text-xs md:text-sm uppercase tracking-wide hover:gap-4 transition-all"
                 >
-                  Learn More <ArrowRight size={12} className="sm:w-4 sm:h-4" />
+                  Learn More <ArrowRight size={14} className="sm:w-4 sm:h-4" />
                 </Link>
               </div>
             </motion.div>

@@ -26,7 +26,7 @@ export default function Map() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[200px] sm:h-[300px] md:h-[400px]"
+            className="w-full h-[350px] sm:h-[350px] md:h-[450px]"
             title="KMC Public School Location"
           />
         </motion.div>

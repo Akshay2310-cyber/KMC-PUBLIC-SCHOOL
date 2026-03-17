@@ -14,7 +14,7 @@ export default function Gallery() {
           <h2 className="section-title text-xl sm:text-2xl md:text-4xl">Life at KMC</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-5 mb-4 sm:mb-8 md:mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-5 mb-4 sm:mb-8 md:mb-12">
           {galleryImages.map((image, index) => (
             <motion.div
               key={image.label}

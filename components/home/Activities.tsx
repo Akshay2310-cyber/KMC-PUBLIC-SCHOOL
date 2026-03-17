@@ -16,7 +16,7 @@ export default function Activities() {
           <h2 className="section-title text-xl sm:text-2xl md:text-4xl">Co-Curricular Activities</h2>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-5">
           {activities.map((activity, index) => (
             <motion.div
               key={activity.title}
@@ -26,7 +26,7 @@ export default function Activities() {
               viewport={{ once: true }}
               className={cn(
                 'relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden cursor-pointer group',
-                activity.large ? 'col-span-2 row-span-1 h-24 sm:h-40 md:h-72' : 'h-20 sm:h-36 md:h-64'
+                activity.large ? 'col-span-2 row-span-1 h-32 sm:h-40 md:h-72' : 'h-28 sm:h-36 md:h-64'
               )}
             >
               <Image
