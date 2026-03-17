@@ -29,7 +29,7 @@ export default function Awards() {
               whileInView={{ opacity: 1, rotateY: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-2 sm:p-4 md:p-10 rounded-lg sm:rounded-xl md:rounded-2xl border border-gray-100 hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all text-center relative"
+              className="bg-gray-50 p-4 sm:p-4 md:p-10 rounded-xl sm:rounded-xl md:rounded-2xl border border-gray-100 hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all text-center relative"
             >
               {/* Year Badge */}
               <span className="absolute top-1 right-1 sm:top-3 sm:right-3 md:top-5 md:right-5 bg-secondary text-gray-900 px-1.5 sm:px-2 md:px-4 py-0.5 sm:py-1 rounded-full text-[8px] sm:text-xs md:text-sm font-semibold">

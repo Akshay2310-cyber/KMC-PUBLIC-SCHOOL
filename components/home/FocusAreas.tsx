@@ -25,7 +25,7 @@ export default function FocusAreas() {
               viewport={{ once: true }}
               className="bg-white rounded-xl sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-lg md:shadow-xl hover:-translate-y-2 transition-transform duration-300 flex sm:flex-col flex-row"
             >
-              <div className="h-28 sm:h-32 md:h-56 w-28 sm:w-full flex-shrink-0 overflow-hidden">
+              <div className="h-36 sm:h-32 md:h-56 w-full sm:w-full flex-shrink-0 overflow-hidden">
                 <Image
                   src={area.image}
                   alt={area.title}
@@ -34,11 +34,11 @@ export default function FocusAreas() {
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="p-3 sm:p-4 md:p-8 flex flex-col justify-center">
-                <h3 className="text-sm sm:text-sm md:text-xl font-heading font-bold text-primary mb-1 sm:mb-2 md:mb-4">
+              <div className="p-4 sm:p-4 md:p-8 flex flex-col justify-center">
+                <h3 className="text-base sm:text-sm md:text-xl font-heading font-bold text-primary mb-2 sm:mb-2 md:mb-4">
                   {area.title}
                 </h3>
-                <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed mb-2 sm:mb-4 md:mb-6 line-clamp-2 sm:line-clamp-3 md:line-clamp-none">
+                <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed mb-3 sm:mb-4 md:mb-6 line-clamp-3 sm:line-clamp-3 md:line-clamp-none">
                   {area.description}
                 </p>
                 <Link 

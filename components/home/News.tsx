@@ -26,7 +26,7 @@ export default function News() {
               className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-md sm:shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all"
             >
               {/* Image */}
-              <div className="relative h-16 sm:h-28 md:h-56 overflow-hidden">
+              <div className="relative h-24 sm:h-28 md:h-56 overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -39,11 +39,11 @@ export default function News() {
               </div>
 
               {/* Content */}
-              <div className="p-2 sm:p-3 md:p-6">
+              <div className="p-4 sm:p-3 md:p-6">
                 <span className="text-[8px] sm:text-[10px] md:text-xs font-semibold text-secondary uppercase tracking-wider">
                   {item.category}
                 </span>
-                <h3 className="text-[10px] sm:text-sm md:text-lg font-heading font-bold text-gray-900 mt-0.5 sm:mt-1 md:mt-2 mb-1 sm:mb-2 md:mb-3 line-clamp-2">
+                <h3 className="text-sm sm:text-sm md:text-lg font-heading font-bold text-gray-900 mt-1 sm:mt-1 md:mt-2 mb-2 sm:mb-2 md:mb-3 line-clamp-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-[8px] sm:text-xs md:text-sm mb-1 sm:mb-2 md:mb-4 line-clamp-2 hidden sm:block">

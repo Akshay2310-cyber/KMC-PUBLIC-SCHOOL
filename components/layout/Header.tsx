@@ -33,10 +33,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <div className="flex flex-col">
-              <span className="font-hero text-base sm:text-xl font-bold text-primary leading-tight" style={{ letterSpacing: '-0.5px' }}>
+              <span className="font-hero text-base sm:text-xl font-bold text-secondary leading-tight" style={{ letterSpacing: '-0.5px' }}>
                 {schoolInfo.name}
               </span>
-              <span className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider">
+              <span className="text-[10px] sm:text-xs text-secondary uppercase tracking-wider">
                 {schoolInfo.tagline}
               </span>
             </div>

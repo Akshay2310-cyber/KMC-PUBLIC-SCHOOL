@@ -51,19 +51,19 @@ export default function Programs() {
               className="grid grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center"
             >
               {/* Image */}
-              <div className="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-md sm:shadow-lg md:shadow-xl">
+              <div className="rounded-xl sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-lg md:shadow-xl">
                 <Image
                   src={activeProgram.image}
                   alt={activeProgram.name}
                   width={800}
                   height={500}
-                  className="w-full h-[120px] sm:h-[180px] md:h-[300px] lg:h-[400px] object-cover"
+                  className="w-full h-[180px] sm:h-[180px] md:h-[300px] lg:h-[400px] object-cover"
                 />
               </div>
 
               {/* Info */}
-              <div>
-                <h3 className="text-sm sm:text-lg md:text-3xl font-heading font-bold text-primary mb-1 sm:mb-2 md:mb-3">
+              <div className="p-5">
+                <h3 className="text-lg sm:text-lg md:text-3xl font-heading font-bold text-primary mb-2 sm:mb-2 md:mb-3">
                   {activeProgram.name}
                 </h3>
                 <p className="text-[10px] sm:text-sm md:text-lg text-secondary font-semibold mb-2 sm:mb-4 md:mb-6">
