@@ -8,19 +8,22 @@
   }
   
   body {
-    @apply antialiased font-body;
+    @apply antialiased;
+    font-family: var(--font-inter), sans-serif;
     line-height: 1.7;
   }
 
   /* Hero titles - Libre Baskerville */
   .hero-title {
-    @apply font-hero font-bold;
+    font-family: var(--font-libre-baskerville), serif;
+    font-weight: 700;
     letter-spacing: -0.5px;
   }
 
   /* Section titles - Merriweather */
   .section-title {
-    @apply font-heading font-bold;
+    font-family: var(--font-merriweather), serif;
+    font-weight: 700;
   }
 }
 

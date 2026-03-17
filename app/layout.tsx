@@ -48,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${libreBaskerville.variable} ${merriweather.variable}`}>
-      <body className="font-body">
+      <body>
         <TopBar />
         <Header />
         <main>{children}</main>
