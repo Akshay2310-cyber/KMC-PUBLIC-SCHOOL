@@ -45,7 +45,7 @@ export default function Hero() {
         <p className="text-lg md:text-xl font-light mb-4 opacity-90 animate-fade-up">
           Welcome to
         </p>
-        <h1 className="text-5xl md:text-7xl hero-title mb-6 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-5xl md:text-7xl hero-title mb-6 animate-fade-up text-[#D4AF37]" style={{ animationDelay: '0.2s' }}>
           KMC Public School
         </h1>
         <p className="text-xl md:text-2xl font-light text-secondary mb-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
@@ -55,7 +55,7 @@ export default function Hero() {
           An exclusive CBSE school in Tirupur providing world-class education with international standards since 2008
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.8s' }}>
-          <Link href="/about" className="btn btn-primary btn-lg">
+          <Link href="/about" className="btn btn-lg bg-[#D4AF37] text-white border-2 border-[#D4AF37] hover:bg-[#B8962D] hover:border-[#B8962D] hover:-translate-y-0.5 hover:shadow-lg">
             Discover KMC
           </Link>
           <button className="btn btn-outline btn-lg group">
