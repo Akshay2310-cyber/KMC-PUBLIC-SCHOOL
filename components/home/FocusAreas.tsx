@@ -23,9 +23,9 @@ export default function FocusAreas() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-lg md:shadow-xl hover:-translate-y-2 transition-transform duration-300 flex sm:flex-col flex-row"
+              className="bg-white rounded-xl sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-lg md:shadow-xl hover:-translate-y-2 transition-transform duration-300 flex flex-col"
             >
-              <div className="h-36 sm:h-32 md:h-56 w-full sm:w-full flex-shrink-0 overflow-hidden">
+              <div className="h-48 sm:h-48 md:h-56 w-full flex-shrink-0 overflow-hidden">
                 <Image
                   src={area.image}
                   alt={area.title}

@@ -149,7 +149,7 @@ export const programs = [
       'Introduction to basic concepts',
       'Music, art, and physical activities',
     ],
-    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/KG%27S%20-%20Birds%20day%202018/1.jpg',
   },
   {
     id: 'primary',
@@ -163,7 +163,7 @@ export const programs = [
       'Computer education',
       'Co-curricular activities',
     ],
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/premises/premises%20(21).jpg',
   },
   {
     id: 'middle',
@@ -177,7 +177,7 @@ export const programs = [
       'Leadership development',
       'Sports and cultural activities',
     ],
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/sportsday2019/SPD_9490.JPG',
   },
   {
     id: 'secondary',
@@ -191,7 +191,7 @@ export const programs = [
       'Competitive exam preparation',
       'Personality development',
     ],
-    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/independence2019/1.jpg',
   },
   {
     id: 'senior',
@@ -205,7 +205,7 @@ export const programs = [
       'Humanities with Psychology, Economics',
       'College admission guidance',
     ],
-    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/5.jpg',
   },
 ]
 
@@ -213,17 +213,17 @@ export const focusAreas = [
   {
     title: 'Academic Excellence',
     description: 'We focus on quality academic programming with emphasis on STEM education, ensuring appropriate challenge for all learners. Our innovative curriculum and experienced faculty ensure every student achieves their potential in core subjects.',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/premises/premises%20(21).jpg',
   },
   {
     title: 'Character Development',
     description: 'We empower students with purpose and compassion. Beyond academics, we ensure our students develop integrity, strength of character, and are healthy socially and emotionally through our comprehensive co-curricular programs.',
-    image: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/sportsday2019/SPD_9280.JPG',
   },
   {
     title: 'Community & Relationships',
     description: 'Our inclusive community fosters strong, lifelong peer relationships. Through KMC Parliament, clubs, and various activities, students learn collaboration and develop leadership skills.',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/1.jpg',
   },
 ]
 
@@ -231,37 +231,37 @@ export const activities = [
   {
     title: 'KMC Parliament',
     description: 'Student governance and leadership development',
-    image: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=800',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/1.jpg',
     large: true,
   },
   {
     title: 'Sports',
     description: 'Football, Volleyball, Badminton, Chess & more',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/sportsday2019/SPD_9280.JPG',
     large: false,
   },
   {
     title: 'Cultural Activities',
     description: 'Music, Dance, Drama & Art',
-    image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/independence2019/42.jpg',
     large: false,
   },
   {
     title: 'Robotics Club',
     description: 'Innovation and technology exploration',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600',
+    image: 'http://www.kmcpublicschool.org/stemback.jpg',
     large: false,
   },
   {
     title: 'Yoga & Fitness',
     description: 'Yoga, Karate, Skating & Aerobics',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/Yoga%20day%202019/1.jpg',
     large: false,
   },
   {
     title: 'KMC Clubs',
     description: 'Hindi Club, Robotics Club, Air Rifle Shooting & more',
-    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800',
+    image: 'http://www.kmcpublicschool.org/imageshome/polic.jpg',
     large: true,
   },
 ]
@@ -288,12 +288,12 @@ export const testimonials = [
 ]
 
 export const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600', alt: 'Campus', label: 'Campus' },
-  { src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600', alt: 'Classroom', label: 'Classrooms' },
-  { src: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600', alt: 'Library', label: 'Library' },
-  { src: 'https://images.unsplash.com/photo-1562774053-701939374585?w=600', alt: 'Computer Lab', label: 'Computer Lab' },
-  { src: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600', alt: 'Sports', label: 'Sports' },
-  { src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600', alt: 'Events', label: 'Events' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/premises/premises%20(21).jpg', alt: 'Campus', label: 'Campus' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/premises/infra1.jpg', alt: 'Classroom', label: 'Classrooms' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/sportsday2019/SPD_9280.JPG', alt: 'Sports', label: 'Sports' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/10.jpg', alt: 'Parliament', label: 'Parliament' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/independence2019/1.jpg', alt: 'Events', label: 'Events' },
+  { src: 'http://www.kmcpublicschool.org/gallery_pics/Yoga%20day%202019/5.jpg', alt: 'Activities', label: 'Activities' },
 ]
 
 export const news = [
@@ -302,20 +302,20 @@ export const news = [
     excerpt: 'Grand celebration showcasing student talents in music, dance, and drama performances.',
     date: 'March 2024',
     category: 'Events',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/independence2019/42.jpg',
   },
   {
     title: 'Sports Day Championship',
     excerpt: 'Inter-house sports competition featuring athletics, team sports, and individual events.',
     date: 'February 2024',
     category: 'Sports',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/sportsday2019/SPD_9490.JPG',
   },
   {
     title: 'KMC Parliament Swearing-In',
     excerpt: 'New student council takes oath in a grand ceremony, ready to lead and serve.',
     date: 'January 2024',
     category: 'Student Life',
-    image: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/1.jpg',
   },
 ]

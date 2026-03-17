@@ -26,7 +26,7 @@ export default function News() {
               className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-md sm:shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all"
             >
               {/* Image */}
-              <div className="relative h-24 sm:h-28 md:h-56 overflow-hidden">
+              <div className="relative h-32 sm:h-28 md:h-56 overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
