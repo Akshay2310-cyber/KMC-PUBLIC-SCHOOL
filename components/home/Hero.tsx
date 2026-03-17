@@ -6,10 +6,10 @@ import { Play, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const heroSlides = [
-  '/images/premises1.jpg',
-  '/images/premises2.jpg',
-  '/images/sportsday1.jpg',
-  '/images/independence1.jpg',
+  '/kmc-hero1.webp',
+  '/kmc-hero2.webp',
+  '/kmc-hero3.webp',
+  '/kmc-hero4.webp',
 ]
 
 export default function Hero() {
@@ -37,7 +37,7 @@ export default function Hero() {
           />
         ))}
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-dark/80 to-gray-900/70" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}

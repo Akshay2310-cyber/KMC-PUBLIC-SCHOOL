@@ -48,7 +48,7 @@ export default function Welcome() {
           >
             <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl">
               <Image
-                src="/images/premises1.jpg"
+                src="/kms-campus.webp"
                 alt="KMC Public School Campus"
                 width={800}
                 height={600}
