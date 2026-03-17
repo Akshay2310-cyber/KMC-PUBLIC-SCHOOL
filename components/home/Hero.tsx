@@ -23,21 +23,21 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative h-[70vh] min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] lg:h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] min-h-[350px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) => (
           <div
             key={index}
             className={cn(
-              'absolute inset-0 bg-cover bg-center transition-opacity duration-1000',
+              'absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000',
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             )}
             style={{ backgroundImage: `url(${slide})` }}
           />
         ))}
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
