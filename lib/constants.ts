@@ -223,7 +223,7 @@ export const focusAreas = [
   {
     title: 'Community & Relationships',
     description: 'Our inclusive community fosters strong, lifelong peer relationships. Through KMC Parliament, clubs, and various activities, students learn collaboration and develop leadership skills.',
-    image: 'http://www.kmcpublicschool.org/gallery_pics/parliament2019/1.jpg',
+    image: 'http://www.kmcpublicschool.org/gallery_pics/independence2019/42.jpg',
   },
 ]
 

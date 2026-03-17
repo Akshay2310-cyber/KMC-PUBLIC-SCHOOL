@@ -5,11 +5,11 @@ import { motion } from 'framer-motion'
 
 export default function Welcome() {
   return (
-    <section className="py-8 sm:py-12 md:py-24 bg-white" id="about">
+    <section className="py-8 sm:py-12 md:py-24 bg-gradient-to-br from-primary to-primary-dark" id="about">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4 sm:mb-8 md:mb-12">
-          <span className="section-tag text-[10px] sm:text-xs md:text-sm">Welcome</span>
-          <h2 className="section-title text-xl sm:text-2xl md:text-4xl">Why KMC Public School</h2>
+          <span className="section-tag text-secondary text-[10px] sm:text-xs md:text-sm">Welcome</span>
+          <h2 className="section-title section-title-light text-xl sm:text-2xl md:text-4xl">Why KMC Public School</h2>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center">
@@ -21,16 +21,16 @@ export default function Welcome() {
             viewport={{ once: true }}
             className="col-span-2 sm:col-span-1 order-2 sm:order-1"
           >
-            <p className="text-xs sm:text-sm md:text-xl text-gray-700 font-medium mb-2 sm:mb-4 md:mb-6 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-xl text-white font-medium mb-2 sm:mb-4 md:mb-6 leading-relaxed">
               KMC Public School, established in 2008, has been a beacon of educational 
               excellence in Tirupur, providing world-class CBSE curriculum education.
             </p>
-            <p className="text-[10px] sm:text-xs md:text-base text-gray-600 mb-2 sm:mb-4 md:mb-6 leading-relaxed hidden sm:block">
+            <p className="text-[10px] sm:text-xs md:text-base text-white/90 mb-2 sm:mb-4 md:mb-6 leading-relaxed hidden sm:block">
               Named after Shri. M. Chinnaswamy Gounder, a great philanthropist, our school 
               is committed to nurturing well-rounded individuals through a perfect blend of 
               academics, co-curricular activities, and character development.
             </p>
-            <p className="text-[10px] sm:text-xs md:text-base text-gray-600 leading-relaxed hidden md:block">
+            <p className="text-[10px] sm:text-xs md:text-base text-white/90 leading-relaxed hidden md:block">
               Our personalized approach with a maximum class strength of 30 students ensures 
               every child receives individual attention. From Pre-KG to Grade XII, we offer 
               comprehensive education with state-of-the-art facilities, experienced faculty, 
@@ -52,7 +52,7 @@ export default function Welcome() {
                 alt="KMC Public School Campus"
                 width={800}
                 height={600}
-                className="w-full h-[150px] sm:h-[200px] md:h-[350px] lg:h-[400px] object-cover"
+                className="w-full h-[250px] sm:h-[200px] md:h-[350px] lg:h-[400px] object-cover"
               />
             </div>
             {/* Experience Badge */}

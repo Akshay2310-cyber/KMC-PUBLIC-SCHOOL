@@ -8,11 +8,11 @@ import { focusAreas } from '@/lib/constants'
 
 export default function FocusAreas() {
   return (
-    <section className="py-6 sm:py-10 md:py-24 bg-gradient-to-br from-primary to-primary-dark">
+    <section className="py-6 sm:py-10 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4 sm:mb-8 md:mb-16">
-          <span className="section-tag text-secondary text-[10px] sm:text-xs md:text-sm">Our Pillars</span>
-          <h2 className="section-title section-title-light text-xl sm:text-2xl md:text-4xl">3 Strategic Focus Areas</h2>
+          <span className="section-tag text-[10px] sm:text-xs md:text-sm">Our Pillars</span>
+          <h2 className="section-title text-xl sm:text-2xl md:text-4xl">3 Strategic Focus Areas</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4 md:gap-8">
