@@ -23,7 +23,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative h-screen min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[70vh] min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] lg:h-screen flex items-center justify-center overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {heroSlides.map((slide, index) => (

@@ -14,24 +14,24 @@ export default function Programs() {
   const activeProgram = programs.find(p => p.id === activeTab)
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-gray-50" id="programs">
+    <section className="py-6 sm:py-10 md:py-24 bg-gray-50" id="programs">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 sm:mb-12">
-          <span className="section-tag text-xs sm:text-sm">Academics</span>
-          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">Our Programs</h2>
+        <div className="text-center mb-4 sm:mb-8 md:mb-12">
+          <span className="section-tag text-[10px] sm:text-xs md:text-sm">Academics</span>
+          <h2 className="section-title text-xl sm:text-2xl md:text-4xl">Our Programs</h2>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 px-2">
+        <div className="flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-3 mb-4 sm:mb-8 md:mb-12 px-1">
           {programs.map((program) => (
             <button
               key={program.id}
               onClick={() => setActiveTab(program.id)}
               className={cn(
-                'px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all',
+                'px-2 sm:px-3 md:px-6 py-1 sm:py-2 md:py-3 rounded-full text-[10px] sm:text-xs md:text-sm font-medium transition-all',
                 activeTab === program.id
                   ? 'bg-primary text-white'
-                  : 'bg-white text-gray-600 border-2 border-gray-200 hover:border-primary hover:text-primary'
+                  : 'bg-white text-gray-600 border border-gray-200 sm:border-2 hover:border-primary hover:text-primary'
               )}
             >
               {program.name}
@@ -48,41 +48,41 @@ export default function Programs() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center"
+              className="grid grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center"
             >
               {/* Image */}
-              <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl">
+              <div className="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-md sm:shadow-lg md:shadow-xl">
                 <Image
                   src={activeProgram.image}
                   alt={activeProgram.name}
                   width={800}
                   height={500}
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover"
+                  className="w-full h-[120px] sm:h-[180px] md:h-[300px] lg:h-[400px] object-cover"
                 />
               </div>
 
               {/* Info */}
               <div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-primary mb-2 sm:mb-3">
+                <h3 className="text-sm sm:text-lg md:text-3xl font-heading font-bold text-primary mb-1 sm:mb-2 md:mb-3">
                   {activeProgram.name}
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg text-secondary font-semibold mb-4 sm:mb-6">
+                <p className="text-[10px] sm:text-sm md:text-lg text-secondary font-semibold mb-2 sm:mb-4 md:mb-6">
                   {activeProgram.grades}
                 </p>
-                <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+                <p className="text-[10px] sm:text-xs md:text-base text-gray-600 mb-2 sm:mb-4 md:mb-8 leading-relaxed line-clamp-3 sm:line-clamp-none">
                   {activeProgram.description}
                 </p>
 
-                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-                  {activeProgram.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-gray-600">
-                      <Check size={16} className="text-secondary flex-shrink-0 sm:w-[18px] sm:h-[18px]" />
-                      {feature}
+                <ul className="space-y-1 sm:space-y-2 md:space-y-3 mb-2 sm:mb-4 md:mb-8 hidden sm:block">
+                  {activeProgram.features.slice(0, 3).map((feature) => (
+                    <li key={feature} className="flex items-center gap-1 sm:gap-2 md:gap-3 text-[10px] sm:text-xs md:text-base text-gray-600">
+                      <Check size={12} className="text-secondary flex-shrink-0 sm:w-4 sm:h-4 md:w-[18px] md:h-[18px]" />
+                      <span className="line-clamp-1">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Link href="/admissions" className="btn btn-primary text-xs sm:text-sm px-5 sm:px-7 py-2 sm:py-3">
+                <Link href="/admissions" className="btn btn-primary text-[10px] sm:text-xs md:text-sm px-3 sm:px-5 md:px-7 py-1.5 sm:py-2 md:py-3">
                   Learn More
                 </Link>
               </div>

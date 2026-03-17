@@ -18,11 +18,11 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary to-primary-dark">
+    <section className="py-6 sm:py-10 md:py-24 bg-gradient-to-br from-primary to-primary-dark">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="section-tag text-secondary">Testimonials</span>
-          <h2 className="section-title section-title-light">What Parents Say</h2>
+        <div className="text-center mb-4 sm:mb-8 md:mb-16">
+          <span className="section-tag text-secondary text-[10px] sm:text-xs md:text-sm">Testimonials</span>
+          <h2 className="section-title section-title-light text-xl sm:text-2xl md:text-4xl">What Parents Say</h2>
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -36,16 +36,16 @@ export default function Testimonials() {
               className="text-center"
             >
               {/* Quote Card */}
-              <div className="bg-white rounded-2xl p-10 mb-10 relative shadow-xl">
-                <Quote className="absolute top-6 left-6 text-primary/10" size={48} />
-                <p className="text-gray-600 text-lg italic leading-relaxed">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 mb-4 sm:mb-6 md:mb-10 relative shadow-lg sm:shadow-xl">
+                <Quote className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-6 md:left-6 text-primary/10 w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12" />
+                <p className="text-gray-600 text-xs sm:text-sm md:text-lg italic leading-relaxed line-clamp-4 sm:line-clamp-none">
                   &ldquo;{testimonials[current].content}&rdquo;
                 </p>
               </div>
 
               {/* Author */}
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-lg">
                   <Image
                     src={testimonials[current].image}
                     alt={testimonials[current].author}
@@ -55,10 +55,10 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-white font-semibold text-lg">
+                  <h4 className="text-white font-semibold text-sm sm:text-base md:text-lg">
                     {testimonials[current].author}
                   </h4>
-                  <p className="text-white/70 text-sm">
+                  <p className="text-white/70 text-[10px] sm:text-xs md:text-sm">
                     {testimonials[current].role}
                   </p>
                 </div>
@@ -67,13 +67,13 @@ export default function Testimonials() {
           </AnimatePresence>
 
           {/* Dots */}
-          <div className="flex justify-center gap-3 mt-10">
+          <div className="flex justify-center gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-10">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={cn(
-                  'w-3 h-3 rounded-full transition-all',
+                  'w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full transition-all',
                   index === current ? 'bg-white scale-125' : 'bg-white/30 hover:bg-white/50'
                 )}
               />
