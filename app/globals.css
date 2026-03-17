@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-medium uppercase tracking-wider rounded transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white border-2 border-primary hover:bg-primary-dark hover:border-primary-dark hover:-translate-y-0.5 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-gray-900 border-2 border-secondary hover:bg-secondary-dark hover:border-secondary-dark hover:-translate-y-0.5;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary;
+  }
+  
+  .btn-lg {
+    @apply px-9 py-4 text-base;
+  }
+  
+  .section-header {
+    @apply text-center mb-16;
+  }
+  
+  .section-tag {
+    @apply inline-block text-sm font-semibold uppercase tracking-widest text-primary mb-2;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold font-heading text-gray-900 mb-4;
+  }
+  
+  .section-title-light {
+    @apply text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C56D1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E3FA8;
+}
