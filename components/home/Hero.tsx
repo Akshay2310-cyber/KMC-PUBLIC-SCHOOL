@@ -6,10 +6,10 @@ import { Play, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const heroSlides = [
-  'http://www.kmcpublicschool.org/gallery_pics/premises/premises%20(21).jpg',
-  'http://www.kmcpublicschool.org/images/BannerBF2019.jpg',
-  'http://www.kmcpublicschool.org/images/ban15(2019).jpg',
-  'http://www.kmcpublicschool.org/gallery_pics/premises/infra1.jpg',
+  '/images/premises1.jpg',
+  '/images/premises2.jpg',
+  '/images/sportsday1.jpg',
+  '/images/independence1.jpg',
 ]
 
 export default function Hero() {
