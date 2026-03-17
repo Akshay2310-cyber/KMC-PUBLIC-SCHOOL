@@ -55,7 +55,7 @@ function CountUp({ target, suffix = '' }: { target: number; suffix?: string }) {
   }, [target, hasAnimated])
 
   return (
-    <div ref={ref} className="text-5xl font-heading font-bold text-primary leading-none mb-3">
+    <div ref={ref} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary leading-none mb-2 sm:mb-3">
       {count}{suffix}
     </div>
   )
@@ -63,7 +63,7 @@ function CountUp({ target, suffix = '' }: { target: number; suffix?: string }) {
 
 export default function Stats() {
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 bg-gray-50 relative overflow-hidden">
       {/* Background Pattern */}
       <div 
         className="absolute inset-0 opacity-5"
@@ -75,12 +75,12 @@ export default function Stats() {
       />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <span className="section-tag">By The Numbers</span>
-          <h2 className="section-title">KMC at a Glance</h2>
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <span className="section-tag text-xs sm:text-sm">By The Numbers</span>
+          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">KMC at a Glance</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {stats.map((stat, index) => {
             const numericValue = parseInt(stat.number.replace(/\D/g, '')) || 100
             const suffix = stat.number.includes('+') ? '+' : stat.number.includes('%') ? '%' : ''
@@ -92,13 +92,13 @@ export default function Stats() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-center"
+                className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-center"
               >
-                <div className="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-white">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 mx-auto mb-3 sm:mb-4 md:mb-5 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-white">
                   {iconMap[stat.icon]}
                 </div>
                 <CountUp target={numericValue} suffix={suffix} />
-                <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
+                <div className="text-gray-600 text-[10px] sm:text-xs md:text-sm font-medium">{stat.label}</div>
               </motion.div>
             )
           })}

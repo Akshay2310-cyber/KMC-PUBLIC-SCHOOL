@@ -24,19 +24,19 @@ export default function Header() {
   return (
     <header 
       className={cn(
-        'fixed top-[42px] left-0 right-0 z-50 bg-white transition-all duration-300',
-        isScrolled ? 'shadow-md top-0' : 'shadow-sm'
+        'fixed left-0 right-0 z-50 bg-white transition-all duration-300',
+        isScrolled ? 'shadow-md top-0' : 'shadow-sm top-0 sm:top-[36px]'
       )}
     >
-      <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-3 sm:px-4">
+        <nav className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <div className="flex flex-col">
-              <span className="font-hero text-xl font-bold text-primary leading-tight" style={{ letterSpacing: '-0.5px' }}>
+              <span className="font-hero text-base sm:text-xl font-bold text-primary leading-tight" style={{ letterSpacing: '-0.5px' }}>
                 {schoolInfo.name}
               </span>
-              <span className="text-xs text-gray-500 uppercase tracking-wider">
+              <span className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider">
                 {schoolInfo.tagline}
               </span>
             </div>
@@ -86,18 +86,18 @@ export default function Header() {
           </ul>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
-            <button className="w-10 h-10 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-colors">
-              <Search size={20} />
+          <div className="flex items-center gap-2 sm:gap-4">
+            <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-colors">
+              <Search size={18} className="sm:w-5 sm:h-5" />
             </button>
-            <Link href="/admissions" className="hidden md:inline-flex btn btn-primary">
+            <Link href="/admissions" className="hidden md:inline-flex btn btn-primary text-xs sm:text-sm px-4 sm:px-7 py-2 sm:py-3">
               Apply Now
             </Link>
             <button 
-              className="lg:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5"
+              className="lg:hidden w-8 h-8 sm:w-10 sm:h-10 flex flex-col justify-center items-center gap-1 sm:gap-1.5"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={22} className="sm:w-6 sm:h-6" /> : <Menu size={22} className="sm:w-6 sm:h-6" />}
             </button>
           </div>
         </nav>
@@ -105,13 +105,13 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[calc(80px+42px)] bg-white z-50 overflow-y-auto">
-          <div className="container mx-auto px-4 py-6">
+        <div className="lg:hidden fixed inset-0 top-16 sm:top-20 bg-white z-50 overflow-y-auto">
+          <div className="container mx-auto px-4 py-4 sm:py-6">
             {navigation.main.map((item) => (
               <div key={item.name} className="border-b border-gray-100">
                 <Link
                   href={item.href}
-                  className="block py-4 text-lg font-medium text-gray-700"
+                  className="block py-3 sm:py-4 text-base sm:text-lg font-medium text-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -120,7 +120,7 @@ export default function Header() {
             ))}
             <Link 
               href="/admissions" 
-              className="btn btn-primary w-full mt-6"
+              className="btn btn-primary w-full mt-4 sm:mt-6 text-sm sm:text-base py-3"
               onClick={() => setMobileMenuOpen(false)}
             >
               Apply Now
