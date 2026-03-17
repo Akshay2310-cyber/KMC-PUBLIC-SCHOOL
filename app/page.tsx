@@ -9,6 +9,7 @@ import Testimonials from '@/components/home/Testimonials'
 import Gallery from '@/components/home/Gallery'
 import CTA from '@/components/home/CTA'
 import News from '@/components/home/News'
+import Map from '@/components/home/Map'
 import Contact from '@/components/home/Contact'
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Gallery />
       <CTA />
       <News />
+      <Map />
       <Contact />
     </>
   )
