@@ -32,11 +32,11 @@ export default function Header() {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center text-white font-heading font-bold text-sm">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center text-white font-hero font-bold text-sm">
               KMC
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-xl font-bold text-primary leading-tight">
+              <span className="font-hero text-xl font-bold text-primary leading-tight" style={{ letterSpacing: '-0.5px' }}>
                 {schoolInfo.name}
               </span>
               <span className="text-xs text-gray-500 uppercase tracking-wider">

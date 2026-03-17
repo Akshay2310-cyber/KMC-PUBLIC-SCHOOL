@@ -45,7 +45,7 @@ export default function AboutPage() {
             <span>/</span>
             <span className="text-secondary">About Us</span>
           </nav>
-          <h1 className="text-5xl font-heading font-bold mb-4">About KMC Public School</h1>
+          <h1 className="text-5xl hero-title mb-4">About KMC Public School</h1>
           <p className="text-xl text-white/90">A legacy of excellence in education since 2008</p>
         </div>
       </section>

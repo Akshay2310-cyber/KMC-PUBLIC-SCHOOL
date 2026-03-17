@@ -45,7 +45,7 @@ export default function Hero() {
         <p className="text-lg md:text-xl font-light mb-4 opacity-90 animate-fade-up">
           Welcome to
         </p>
-        <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-5xl md:text-7xl hero-title mb-6 animate-fade-up" style={{ animationDelay: '0.2s' }}>
           KMC Public School
         </h1>
         <p className="text-xl md:text-2xl font-light text-secondary mb-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>

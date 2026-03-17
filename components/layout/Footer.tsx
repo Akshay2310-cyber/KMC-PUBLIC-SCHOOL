@@ -12,11 +12,11 @@ export default function Footer() {
             {/* About */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-primary font-heading font-bold text-lg shadow-lg">
+                <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-primary font-hero font-bold text-lg shadow-lg">
                   KMC
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-heading text-xl font-bold text-white leading-tight">
+                  <span className="font-hero text-xl font-bold text-white leading-tight" style={{ letterSpacing: '-0.5px' }}>
                     {schoolInfo.name}
                   </span>
                   <span className="text-xs text-white/80 uppercase tracking-wider">

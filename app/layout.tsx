@@ -1,20 +1,26 @@
 import type { Metadata } from 'next'
-import { Poppins, Playfair_Display } from 'next/font/google'
+import { Inter, Libre_Baskerville, Merriweather } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import TopBar from '@/components/layout/TopBar'
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-poppins',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-inter',
 })
 
-const playfair = Playfair_Display({
+const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-playfair',
+  weight: ['400', '700'],
+  variable: '--font-libre-baskerville',
+})
+
+const merriweather = Merriweather({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-merriweather',
 })
 
 export const metadata: Metadata = {
@@ -41,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${playfair.variable}`}>
-      <body className="font-sans">
+    <html lang="en" className={`${inter.variable} ${libreBaskerville.variable} ${merriweather.variable}`}>
+      <body className="font-body">
         <TopBar />
         <Header />
         <main>{children}</main>

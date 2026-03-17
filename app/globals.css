@@ -8,7 +8,19 @@
   }
   
   body {
-    @apply antialiased;
+    @apply antialiased font-body;
+    line-height: 1.7;
+  }
+
+  /* Hero titles - Libre Baskerville */
+  .hero-title {
+    @apply font-hero font-bold;
+    letter-spacing: -0.5px;
+  }
+
+  /* Section titles - Merriweather */
+  .section-title {
+    @apply font-heading font-bold;
   }
 }
 
@@ -41,7 +53,7 @@
     @apply inline-block text-sm font-semibold uppercase tracking-widest text-primary mb-2;
   }
   
-  .section-title {
+  .section-title-styled {
     @apply text-4xl md:text-5xl font-bold font-heading text-gray-900 mb-4;
   }
   

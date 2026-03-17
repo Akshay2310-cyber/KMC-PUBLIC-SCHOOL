@@ -60,7 +60,7 @@ export default function ContactPage() {
             <span>/</span>
             <span className="text-secondary">Contact Us</span>
           </nav>
-          <h1 className="text-5xl font-heading font-bold mb-4">Contact Us</h1>
+          <h1 className="text-5xl hero-title mb-4">Contact Us</h1>
           <p className="text-xl text-white/90">We&apos;d love to hear from you. Get in touch today.</p>
         </div>
       </section>

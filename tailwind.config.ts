@@ -21,8 +21,9 @@ const config: Config = {
         accent: '#c41e3a',
       },
       fontFamily: {
-        sans: ['var(--font-poppins)', 'sans-serif'],
-        heading: ['var(--font-playfair)', 'serif'],
+        body: ['var(--font-inter)', 'sans-serif'],
+        hero: ['var(--font-libre-baskerville)', 'serif'],
+        heading: ['var(--font-merriweather)', 'serif'],
       },
       container: {
         center: true,

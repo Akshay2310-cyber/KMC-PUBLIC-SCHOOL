@@ -100,7 +100,7 @@ export default function AdmissionsPage() {
             <span>/</span>
             <span className="text-secondary">Admissions</span>
           </nav>
-          <h1 className="text-5xl font-heading font-bold mb-4">Admissions 2024-25</h1>
+          <h1 className="text-5xl hero-title mb-4">Admissions 2024-25</h1>
           <p className="text-xl text-white/90">Begin your child&apos;s journey to excellence</p>
         </div>
       </section>
